@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <input placeholder="Type dec number" class="dec-number">
+        <button onclick="getBinaryClick()" class="binary-number-click">Get binary</button>
+        <p><textarea  cols="16" rows="2" class="binary-number"></textarea></p>
+        <div class="hamming-container">
+            
+            <table class="bits-table">
+                <tr class="bit">
+                    <td>12</td>
+                    <td>1100</td>
+                    <td>M7</td>
+                    <td>
+                        <input class="M M7">
+                    </td>
+                </tr>
+                <tr class="bit">
+                    <td>11</td>
+                    <td>1011</td>
+                    <td>M6</td>
+                    <td>
+                        <input class="M M6">
+                    </td>
+                </tr>
+                <tr class="bit">
+                    <td>10</td>
+                    <td>1010</td>
+                    <td>M5</td>
+                    <td>
+                        <input class="M M5">
+                    </td>
+                </tr>
+                <tr class="bit">
+                    <td>9</td>
+                    <td>1001</td>
+                    <td>M4</td>
+                    <td>
+                        <input class="M M4">
+                    </td>
+                </tr>
+                <tr class="bit">
+                    <td>8</td>
+                    <td>1000</td>
+                    <td>C8</td>
+                    <td>
+                        <input class="M C8">
+                    </td>
+                </tr>
+                <tr class="bit">
+                    <td>7</td>
+                    <td>0111</td>
+                    <td>M3</td>
+                    <td>
+                        <input class="M M3">
+                    </td>
+                </tr>
+                <tr class="bit">
+                    <td>6</td>
+                    <td>0110</td>
+                    <td>M2</td>
+                    <td>
+                        <input class="M M2">
+                    </td>
+                </tr>
+                <tr class="bit">
+                    <td>5</td>
+                    <td>0101</td>
+                    <td>M1</td>
+                    <td>
+                        <input class="M M1">
+                    </td>
+                </tr>
+                <tr class="bit">
+                    <td>4</td>
+                    <td>0100</td>
+                    <td>C4</td>
+                    <td>
+                        <input class="M C4">
+                    </td>
+                </tr>
+                <tr class="bit">
+                    <td>3</td>
+                    <td>0011</td>
+                    <td>M0</td>
+                    <td>
+                        <input class="M M0">
+                    </td>
+                </tr>
+                <tr class="bit">
+                    <td>2</td>
+                    <td>0010</td>
+                    <td>C2</td>
+                    <td>
+                        <input class="M C2">
+                    </td>
+                </tr>
+                <tr class="bit">
+                    <td>1</td>
+                    <td>0001</td>
+                    <td>C1</td>
+                    <td>
+                        <input class="M C1">
+                    </td>
+                </tr>
+            </table>
+            <div class="sbk margin-left">
+                <p>SBK:</p>
+                <p class="c1"></p>
+                <p class="c2"></p>
+                <p class="c4"></p>
+                <p class="c8"></p>
+            </div>
+            <div class="nbk margin-left">
+                <p>NBK:</p>
+                <p class="cc1"></p>
+                <p class="cc2"></p>
+                <p class="cc4"></p>
+                <p class="cc8"></p>
+            </div>
+            
+        </div>
+        <input placeholder="Set R number" class="r-number margin-top">
+        <button onclick="getNBK()" class="r-click">Get NBK</button>
+        
+        <script src="./main.js" async defer></script>
+    </body>
+</html>
